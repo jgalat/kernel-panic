@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>kernel panic</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div class="terminal">
+      <div class="tux"></div>
+      <div>
+        initrd-tools: 0.1.73
+      </div>
+      <div>
+        mount: fs type devfs not supported by kernel
+      </div>
+      <div>
+        umount: devfs: not mounted
+      </div>
+      <div>
+        mount: fs type devfs not supported by kernel
+      </div>
+      <div>
+        umount: devfs: not mounted
+      </div>
+      <div>
+        pivot_root: No such file or directory
+      </div>
+      <div>
+        /sbin/init: 426: cannot open dev/console: No such file
+      </div>
+      <div>
+        Kernel panic - not syncing: Attempted to kill init!<span id="cursor">_</span>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.github.com/jgalat/kernel-panic">SOURCE</a>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    var cursor = document.getElementById("cursor");
+    var toggle = false;
+    var toggleCursor = function () {
+      if (toggle)
+        cursor.style.display = "inline-block";
+      else
+        cursor.style.display = "none";
+      toggle = !toggle;
+    };
+    setInterval(toggleCursor, 200);
+  </script>
+</html>

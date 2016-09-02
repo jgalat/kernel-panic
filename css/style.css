@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'lessvga437';
+  src: url('../ttf/lessvga437.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'vga437';
+  src: url('../ttf/vga437.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  background-color: #000;
+  font-family: 'lessvga437', 'vga437', monospace, sans-serif;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: none;
+}
+
+body {
+  min-height: 100%;
+  color: #CCC;
+  font-size: 1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0 0.6rem 0.2rem 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a:hover{
+  transition: color .6s;
+  color: inherit;
+}
+
+.terminal {
+  padding: 0.7rem;
+}
+
+.tux {
+  background: url('../img/tux.svg') no-repeat left top;
+  background-size: contain;
+  height: 10rem;
+  margin: 0 0 0.2rem 0.2rem;
+}
